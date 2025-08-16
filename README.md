@@ -63,11 +63,11 @@ cd <your-portfolio-repo>
 
 open index.html
 
-Contributing
+# Contributing
 
 Contributions are welcome! If you have any suggestions or improvements, please create an issue or submit a pull request.
 
-Contact
+# Contact
 
 If you have any questions or want to connect, feel free to reach out:
 
@@ -77,4 +77,4 @@ LinkedIn: https://www.linkedin.com/in/rakhshinda-nausheen
 
 GitHub: https://github.com/Rakhshindaa
 
-Thank you for visiting my portfolio website repository!
+# Thank you for visiting my portfolio website repository!
