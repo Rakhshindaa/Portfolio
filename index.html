@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | AI/ML Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <style>
+    body {
+      background: #2b1645; /* Dark purple background */
+      scroll-behavior: smooth;
+    }
+    .glow:hover {
+      box-shadow: 0 0 15px #9b59b6, 0 0 30px #8e44ad;
+      transform: translateY(-5px);
+      transition: all 0.3s ease-in-out;
+    }
+    .section-title {
+      border-bottom: 2px solid #9b59b6;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+    .project-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    /* Header styling */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(177, 145, 216, 0.9);
+      z-index: 50;
+      backdrop-filter: blur(10px);
+    }
+    header a:hover {
+      color: #7333c1;
+    }
+    main {
+      padding-top: 80px; /* offset for fixed header */
+    }
+  </style>
+</head>
+<body class="text-white font-sans">
+
+  <!-- Header Navigation -->
+  <header class="w-full px-8 py-4 flex justify-center gap-8 shadow-md">
+    <a href="#hero" class="hover:text-purple-300 glow">Home</a>
+    <a href="#skills" class="hover:text-purple-300 glow">Skills</a>
+    <a href="#projects" class="hover:text-purple-300 glow">Projects</a>
+    <a href="#experience" class="hover:text-purple-300 glow">Internships</a>
+    <a href="#education" class="hover:text-purple-300 glow">Education</a>
+    <a href="#achievements" class="hover:text-purple-300 glow">Certifications</a>
+    <a href="#extra" class="hover:text-purple-300 glow">Achievements</a>
+    <a href="#contact" class="hover:text-purple-300 glow">Contact</a>
+  </header>
+
+  <main>
+    <!-- Hero / Intro Section -->
+    <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center px-4">
+      <h1 class="text-5xl font-bold mb-4" data-aos="fade-down">Hello, I am Rakhshinda Nausheen</h1>
+      <p class="text-xl mb-6" data-aos="fade-up">AI · ML · Data Science Enthusiast</p>
+      <p class="max-w-2xl text-center mb-6" data-aos="fade-up" data-aos-delay="100">
+        Detail-oriented student with hands-on experience in data analysis, ML, and generative AI. Seeking a Data Analyst or AI Developer role to deliver innovative solutions and grow professionally.
+      </p>
+      <div class="flex gap-4" data-aos="zoom-in" data-aos-delay="200">
+        <a href="#projects" class="px-6 py-2 bg-purple-700 rounded hover:bg-purple-800 glow">View Projects</a>
+        <a href="Rakhshinda Nausheen.pdf" class="px-6 py-2 border border-purple-500 rounded hover:bg-purple-700 glow">Download Resume</a>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4" data-aos="fade-left">
+      <h2 class="text-3xl font-bold text-center mb-8 section-title">Skills</h2>
+      <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-white bg-opacity-10 p-4 rounded text-center glow">Python</div>
+        <div class="bg-white bg-opacity-10 p-4 rounded text-center glow">Data Analysis</div>
+        <div class="bg-white bg-opacity-10 p-4 rounded text-center glow">Machine Learning</div>
+        <div class="bg-white bg-opacity-10 p-4 rounded text-center glow">AI</div>
+        <div class="bg-white bg-opacity-10 p-4 rounded text-center glow">SQL</div>
+        <div class="bg-white bg-opacity-10 p-4 rounded text-center glow">Power BI</div>
+        <div class="bg-white bg-opacity-10 p-4 rounded text-center glow">Natural Language Processing</div>
+        <div class="bg-white bg-opacity-10 p-4 rounded text-center glow">Data Visualization</div>
+      </div>
+      <p class="mt-4 text-center" data-aos="fade-up">Soft Skills: Communication, Teamwork, Problem Solving, Time Management, Adaptability, Empathy</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4">
+      <h2 class="text-3xl font-bold text-center mb-12 section-title" data-aos="fade-up">Featured Projects</h2>
+
+      <!-- Project 1: Text Left -->
+      <div class="flex flex-col md:flex-row items-center mb-12" data-aos="fade-right">
+        <div class="md:w-1/2 px-4 text-left">
+          <h3 class="text-xl font-bold mb-2">Uber Data Analysis and Prediction</h3>
+          <p class="mb-2"> Explored Uber ride data using Python(Pandas,NumPy,Matplotlib,Seaborn) to uncover usage patterns,peak hours
+and user behaviors.
+Identified trends and patterns to recommend decisions for improving ride-sharing service and optimizing resource
+allocation.</p>
+          
+        </div>
+        <div class="md:w-1/2 px-4 flex justify-center mt-4 md:mt-0">
+          <img src="project1.jpeg" alt="Project 1" class="project-img glow">
+        </div>
+      </div>
+
+      <!-- Project 2: Text Right -->
+      <div class="flex flex-col md:flex-row items-center mb-12 md:flex-row-reverse" data-aos="fade-left">
+        <div class="md:w-1/2 px-4 text-right">
+          <h3 class="text-xl font-bold mb-2">Text-to-Image Generation Using Stable Diffusion</h3>
+          <p class="mb-2">Built a generative AI model that converts text into images using Stable Diffusion. This project taught me how
+deep learning models can be applied creatively, and I got to experiment with prompt tuning and image quality
+improvement.</p>
+          
+        </div>
+        <div class="md:w-1/2 px-4 flex justify-center mt-4 md:mt-0">
+          <img src="project2.jpeg" alt="Project 2" class="project-img glow">
+        </div>
+      </div>
+
+      <!-- Project 3: Text Left -->
+      <div class="flex flex-col md:flex-row items-center mb-12" data-aos="fade-right">
+        <div class="md:w-1/2 px-4 text-left">
+          <h3 class="text-xl font-bold mb-2">US Election Prediction Using Sentiment Analysis of Twitter Data</h3>
+          <p class="mb-2">Classified tweets into positive, negative, and neutral sentiment using NLP techniques and gained insights into voter
+opinions and political trends.
+Applied statistical methods to correlate sentiment data with election predictions.</p>
+          
+        </div>
+        <div class="md:w-1/2 px-4 flex justify-center mt-4 md:mt-0">
+          <img src="project3.jpeg" alt="Project 3" class="project-img glow">
+        </div>
+      </div>
+
+      <!-- Project 4: Text Right -->
+      <div class="flex flex-col md:flex-row items-center mb-12 md:flex-row-reverse" data-aos="fade-left">
+        <div class="md:w-1/2 px-4 text-right">
+          <h3 class="text-xl font-bold mb-2">Movie Recommendation System Using Python</h3>
+          <p class="mb-2"> Built a personalized movie recommender using machine learning, combining both content-based and collaborative
+filtering approaches for smarter movie suggestions.
+Applied similarity metrics and user rating patterns for effective predictions.</p>
+          
+        </div>
+        <div class="md:w-1/2 px-4 flex justify-center mt-4 md:mt-0">
+          <img src="project4.jpeg" alt="Project 2" class="project-img glow">
+        </div>
+      </div>
+
+      <!-- Project 5: Text Left -->
+      <div class="flex flex-col md:flex-row items-center mb-12" data-aos="fade-right">
+        <div class="md:w-1/2 px-4 text-left">
+          <h3 class="text-xl font-bold mb-2">Library Management System Using MySQL</h3>
+          <p class="mb-2">Designed and implemented a normalized database schema for book inventory, user records, and transaction logs.
+Enabled search, borrowing, and return operations to improve library processes.
+</p>
+          
+        </div>
+        <div class="md:w-1/2 px-4 flex justify-center mt-4 md:mt-0">
+          <img src="project5.jpeg" alt="Project 3" class="project-img glow">
+        </div>
+      </div>
+
+
+    <!-- Internships / Experience Section -->
+    <section id="experience" class="py-20 px-4" data-aos="fade-left">
+      <h2 class="text-3xl font-bold text-center mb-8 section-title">Internships / Experience</h2>
+      <div class="max-w-3xl mx-auto space-y-6">
+        <div class="bg-white bg-opacity-10 p-6 rounded glow">
+          <h3 class="font-bold">Role: Salesforce Developer with Agentblazer Champion</h3>
+          <p>Organization: Salesforce Company (Online) | May 2025 - July 2025</p>
+          <ul class="list-disc ml-5 mt-2">
+            <li> I have strengthened my expertise in: Salesforce Fundamentals: Organizational Setup, Data Management, Security
+Management, Process Automation, and User Interface Hands-on Skills: Apex Development, Object Relationships,
+and Lightning Web Components</li>
+            <li> This experience sharpened my Salesforce skills and broadened my problem-solving mindset.</li>
+    
+          </ul>
+        </div>
+        <div class="bg-white bg-opacity-10 p-6 rounded glow">
+          <h3 class="font-bold">Role: Data Analyst Intern</h3>
+          <p>Organization: CodTech IT Solutions | January 2025 - March 2025</p>
+          <ul class="list-disc ml-5 mt-2">
+            <li> I worked on sentiment analysis, data preprocessing with PySpark, and Power BI dashboards.</li>
+            <li>I developed real-world experience in the data analytics workflow, including data cleaning, visualization, and presenting clear interpretation using industry-standard tools.</li>
+          </ul>
+        </div>
+       
+      <div class="bg-white bg-opacity-10 p-6 rounded glow">
+          <h3 class="font-bold">Role: MySQL Intern</h3>
+          <p>Organization: NIELIT Virtual Academy | August 2024 - October 2024</p>
+          <ul class="list-disc ml-5 mt-2">
+            <li> I designed and managed relational databases, focusing on efficient data retrieval and table design.</li>
+            <li> I developed real-world experience with SQL queries, foreign key associations, and schema normalization for real-world applications.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-4" data-aos="fade-right">
+      <h2 class="text-3xl font-bold text-center mb-8 section-title">Education</h2>
+      <div class="max-w-3xl mx-auto space-y-4">
+        <div class="bg-white bg-opacity-10 p-4 rounded glow">
+          <h3 class="font-bold">B.Tech in Computer Science</h3>
+          <p>Vardhaman College of Engineering | 2022 - 2026                           CGPA: 9.67</p>
+        </div>
+        <div class="bg-white bg-opacity-10 p-4 rounded glow">
+          <h3 class="font-bold">Intermediate</h3>
+          <p>Sai Chaitanya Junior College | 2020 - 2022                          CGPA:9.9</p>
+        </div>
+        <div class="bg-white bg-opacity-10 p-4 rounded glow">
+          <h3 class="font-bold">SSC</h3>
+          <p>Fern Hills High SChool | 2020                                     CGPA:10</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Achievements Section -->
+    <section id="achievements" class="py-20 px-4" data-aos="fade-left">
+      <h2 class="text-3xl font-bold text-center mb-8 section-title">Achievements </h2>
+      <div class="max-w-3xl mx-auto space-y-4">
+        <div class="bg-white bg-opacity-10 p-4 rounded glow">
+          <h3 class="font-bold">Festronix Event 2024 at the College</h3>
+          <p>Organized a 2-day technical event as part of Festronix 2024 at Vardhaman College of Engineering, demonstrating
+leadership and event planning skills.
+</p>
+        </div>
+        <div class="bg-white bg-opacity-10 p-4 rounded glow">
+          <h3 class="font-bold">Smart India Hackathon 2023</h3>
+          <p>Led a team of 5 in the national-level Smart India Hackathon 2023</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Extracurricular / Additional Achievements -->
+    <section id="extra" class="py-20 px-4" data-aos="fade-right">
+      <h2 class="text-3xl font-bold text-center mb-8 section-title">Extracurriculars</h2>
+      <ul class="max-w-3xl mx-auto list-disc ml-5 space-y-2">
+        <li>Contributed as a project mentor for government school students in the DST-NSTC Children Outreach Program
+(Jan–Feb 2025)</li>
+        <li> Participated in Smart India Hackathon 2024, enhancing team collaboration and technical brainstorming experience</li>
+        <li> Actively participated in various events of Festronix 2023, showcasing enthusiasm for co-curricular engagement</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-8 section-title">Contact Me</h2>
+      <p class="mb-4">Email: <a href="mailto:your.email@example.com" class="text-purple-300 hover:underline">rakhshindanausheen@gmail.com</a></p>
+      <div class="flex justify-center gap-6">
+        <a href="https://github.com/Rakhshindaa" class="text-purple-300 hover:underline">GitHub</a>
+        <a href="https://www.linkedin.com/in/rakhshinda-nausheen/" class="text-purple-300 hover:underline">LinkedIn</a>
+        
+      </div>
+    </section>
+  </main>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
